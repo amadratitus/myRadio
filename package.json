@@ -1,0 +1,60 @@
+{
+  "name": "myradio",
+  "version": "1.0.0",
+  "description": "A radio desktop software",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amadratitus/myRadio"
+  },
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "keywords": [
+    "radio",
+    "internet"
+  ],
+  "author": "christopher amadra titus",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^28.2.1",
+    "electron-builder": "^24.9.1"
+  },
+  "dependencies": {
+    "axios": "^1.6.7",
+    "bootstrap": "^5.3.2",
+    "check-internet-connected": "^2.0.6",
+    "dotenv": "^16.4.1",
+    "electron-updater": "^6.1.7",
+    "update-electron-app": "^3.0.0"
+  },
+  "build": {
+    "appId": "com.cinnova.myRadio",
+    "productName": "My Radio",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "dist/**/*",
+      "node_modules/**/*",
+      "main.js",
+      "package.json"
+    ],
+    "mac": {
+      "category": "public.app-category.entertainment",
+      "icon": "./res/images/icon.ico"
+    },
+    "linux": {
+      "icon": "./res/images/icon.ico"
+    },
+    "win": {
+      "icon": "./res/images/icon.ico",
+      "target": [
+        "nsis",
+        "portable"
+      ]
+    }
+  }
+}
