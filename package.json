@@ -6,11 +6,10 @@
     "type": "git",
     "url": "git+https://github.com/amadratitus/myRadio"
   },
-  "main": "main.js",
+  "main": "src/main.js",
   "scripts": {
-    "start": "electron .",
-    "pack": "electron-builder --dir",
-    "dist": "electron-builder"
+    "start": "electron-forge start",
+    "package": "electron-forge make --dev"
   },
   "keywords": [
     "radio",
@@ -19,41 +18,50 @@
   "author": "christopher amadra titus",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^28.2.1",
-    "electron-builder": "^24.9.1"
+    "@electron-forge/cli": "^6.0.0-beta.61",
+    "@electron-forge/maker-deb": "^6.0.0-beta.61",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.61",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.61",
+    "@electron-forge/maker-zip": "^6.0.0-beta.61",
+    "electron": "^28.2.1"
   },
   "dependencies": {
     "axios": "^1.6.7",
     "bootstrap": "^5.3.2",
     "check-internet-connected": "^2.0.6",
     "dotenv": "^16.4.1",
+    "electron-online": "^1.0.0",
     "electron-updater": "^6.1.7",
     "update-electron-app": "^3.0.0"
   },
-  "build": {
-    "appId": "com.cinnova.myRadio",
-    "productName": "My Radio",
-    "directories": {
-      "output": "dist"
-    },
-    "files": [
-      "dist/**/*",
-      "node_modules/**/*",
-      "main.js",
-      "package.json"
-    ],
-    "mac": {
-      "category": "public.app-category.entertainment",
-      "icon": "./res/images/icon.ico"
-    },
-    "linux": {
-      "icon": "./res/images/icon.ico"
-    },
-    "win": {
-      "icon": "./res/images/icon.ico",
-      "target": [
-        "nsis",
-        "portable"
+  "config": {
+    "forge": {
+      "packagerConfig": {
+        "name": "My Radio",
+        "executableName": "My Radio",
+        "icon": "./res/images/icon.ico"
+      },
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "myRadio"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
+        }
       ]
     }
   }
