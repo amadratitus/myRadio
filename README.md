@@ -28,4 +28,4 @@ myRadio is licensed under the MIT License.
 Studio Puckey
 
 ## Contact
-If you have any questions or feedback, feel free to contact us at [info@example.com](mailto:info@example.com).
+If you have any questions or feedback, feel free to contact us at [groc coding school](mailto:groc.coders.schools@gmail.com).

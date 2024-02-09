@@ -1,6 +1,9 @@
 #bat files
 Bat Files
 *.bat
+#document directores
+Docs/
+doc/
 # Logs
 logs
 *.log

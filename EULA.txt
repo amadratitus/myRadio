@@ -1,0 +1,30 @@
+EULA (End User License Agreement)
+EULA (End User License Agreement) for this software:
+
+Thank you for choosing our software.
+
+By installing or using software on this website, you accept the terms of this license
+
+Except for software labelled as "open source", you may not rent, lease, modify, translate, reverse engineer, decompile, disassemble or create derivative works based on the software.
+
+FREE VERSIONS
+
+For software labelled "free", you may install the software on an unlimited number of devices.
+
+OPEN SOURCE
+
+For software labelled "open source", the open source license details accompanying that software and its data further govern that particular software and its data. This may differ for each software project.
+
+REGISTERED VERSIONS
+
+For commercial software, you may install the software on one computer/device for each license you purchase. You may re-download and re-activate your software if, for example, you replace your computer with a new one.
+
+Disclaimer of Warranty
+
+ALL SOFTWARE AND ACCOMPANYING FILES ARE PROVIDED "AS IS" AND WITHOUT WARRANTIES AS TO PERFORMANCE OR MERCHANTABILITY OR ANY OTHER WARRANTIES WHETHER EXPRESSED OR IMPLIED.
+
+IN NO EVENT SHALL WE, OR OUR RESELLERS BE LIABLE FOR DAMAGE OF ANY KIND, LOSS OF DATA, LOSS OF PROFITS, BUSINESS INTERRUPTION OR OTHER PECUNIARY LOSS ARISING DIRECTLY OR INDIRECTLY. ANY LIABILITY OF THE SELLER WILL BE EXCLUSIVELY LIMITED TO, AT THE DISCRETION OF THE SELLER, EITHER REPLACEMENT OF THE PRODUCT OR REFUND OF PURCHASE PRICE.
+
+Technical Support
+
+Unless specific otherwise, there is no free technical support included for the software. If you require technical support, this is a separate paid service and we reserve the right to charge a support fee.

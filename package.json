@@ -1,7 +1,9 @@
 {
-  "name": "myradio",
+  "name": "MyRadio",
   "version": "1.0.0",
   "description": "A radio desktop software",
+  "icon": "./src/res/icon",
+  "setupIcon": "./src/res/icon.ico",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/amadratitus/myRadio"
@@ -9,13 +11,14 @@
   "main": "src/main.js",
   "scripts": {
     "start": "electron-forge start",
-    "package": "electron-forge make --dev"
+    "package": "electron-forge make --dev",
+    "publish": "electron-forge publish"
   },
   "keywords": [
     "radio",
     "internet"
   ],
-  "author": "christopher amadra titus",
+  "author": "iChris Technologies",
   "license": "MIT",
   "devDependencies": {
     "@electron-forge/cli": "^6.0.0-beta.61",
@@ -23,29 +26,43 @@
     "@electron-forge/maker-rpm": "^6.0.0-beta.61",
     "@electron-forge/maker-squirrel": "^6.0.0-beta.61",
     "@electron-forge/maker-zip": "^6.0.0-beta.61",
-    "electron": "^28.2.1"
+    "@electron/asar": "^3.2.8",
+    "electron": "^28.2.1",
+    "electron-prebuilt-compile": "8.2.0"
   },
   "dependencies": {
     "axios": "^1.6.7",
     "bootstrap": "^5.3.2",
     "check-internet-connected": "^2.0.6",
     "dotenv": "^16.4.1",
+    "electron-compile": "^6.4.4",
+    "electron-forge": "^5.2.4",
+    "electron-log": "^5.1.1",
     "electron-online": "^1.0.0",
     "electron-updater": "^6.1.7",
     "update-electron-app": "^3.0.0"
   },
   "config": {
     "forge": {
+      "github_repository": {
+        "owner": "amadratitus",
+        "name": "myRadio"
+      },
       "packagerConfig": {
         "name": "My Radio",
         "executableName": "My Radio",
-        "icon": "./res/images/icon.ico"
+        "icon": "./src/res/icon"
+      },
+      "publish": {
+        "provider": "github",
+        "repo": "amadratitus/myRadio"
       },
       "makers": [
         {
           "name": "@electron-forge/maker-squirrel",
           "config": {
-            "name": "myRadio"
+            "name": "myRadio",
+            "setupIcon": "./src/res/icon.ico"
           }
         },
         {
