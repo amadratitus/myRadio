@@ -2,6 +2,8 @@
 
 myRadio is a desktop application built with Electron that allows users to stream radio stations from around the world, organize their favorite stations, and discover new ones easily.
 
+![Screenshot (417)](https://github.com/amadratitus/myRadio/assets/117981104/87e51e36-caff-475d-b315-10fac6139831)
+
 ## Features
 1. **Stream Radio Stations**: Access a vast selection of radio stations from different genres and regions.
 2. **Favorites**: Save your favorite stations for quick access.
@@ -14,6 +16,9 @@ To install myRadio, follow these steps:
 
 ## Usage
 To use myRadio, simply launch the application and browse through the available radio stations. You can search for stations by name or country. Click on a station to start streaming it instantly. Save your favorite stations by clicking on the heart icon for quick access later.
+
+![Screenshot (420)](https://github.com/amadratitus/myRadio/assets/117981104/f8d7b4fe-f82a-4b23-804f-7238ab5738fb)
+
 
 ## Development
 If you want to contribute to the development of myRadio, follow these steps:
